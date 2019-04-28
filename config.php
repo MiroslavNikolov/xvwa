@@ -1,10 +1,9 @@
 <?php
-$XVWA_WEBROOT = "localhost";
-$host = "localhost";
-$dbname = 'xvwa';
+$XVWA_WEBROOT = "";$host = "127.0.0.1";
+$dbname = '';
 $user = "root";
-$pass = "rootpass";
-$conn = new mysqli($host,$user,$pass,$dbname);
+$pass = "";
+$conn = new mysqli($host,$user,$pass);
 $conn1 = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
 $conn1->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 ?>
