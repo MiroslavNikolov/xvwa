@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$uname = $_POST['username'];
+	$uname = $_POST['root'];
 	$password = md5($_POST['password']);
 	$ActiveUser = '';
 	include_once('config.php');
